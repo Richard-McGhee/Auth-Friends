@@ -7,11 +7,17 @@ import FriendList from './components/FriendList';
 import PrivateRoute from './components/PrivateRoute'
 
 function App() {
+  const logOut = () => {
+    localStorage.clear()
+  }
   return (
     <div>
       <Link to='/home'>
-          <h1>Home Page</h1>
-        </Link>
+        <h1>Home Page</h1> 
+      </Link>
+      <Link to='/home' onClick={logOut}>
+        <h1>Log Out</h1>
+      </Link>
       <Switch>
         <Route exact path='/home' component={HomePage} />
         <Route path='/login' component={Login} />

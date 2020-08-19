@@ -7,6 +7,9 @@ const HomePage = () => {
             <Link to='/login'>
                 <h1>Login</h1>
             </Link>
+            <Link to='/friends'>
+                <h2>Friends List</h2>
+            </Link>
             <Link to='/addFriend'>
                 <h2>Add Your Friends</h2>
             </Link>

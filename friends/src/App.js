@@ -4,6 +4,7 @@ import HomePage from './components/HomePage'
 import Login from './components/Login';
 import FriendForm from './components/FriendForm';
 import FriendList from './components/FriendList';
+import PrivateRoute from './components/PrivateRoute'
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
       <Switch>
         <Route exact path='/home' component={HomePage} />
         <Route path='/login' component={Login} />
-        <Route path='/addFriend' component={FriendForm} />
-        <Route path='/friends' component={FriendList} />
+        <PrivateRoute path='/addFriend' component={FriendForm} />
+        <PrivateRoute path='/friends' component={FriendList} />
       </Switch>
     </div>
   );
